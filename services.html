@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Interactive Pricing | iDanny Repair</title>
+  <meta name="description" content="View our repair services and calculate your hardware repair cost dynamically with the iDanny Repair Interactive Cost Estimator.">
+  <link rel="icon" type="image/png" href="images/iDannyRepair_Logo.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="logo-nav">
+        <img src="images/iDannyRepair_Logo.png" alt="iDanny Repair Logo" class="logo-img">
+        <span class="logo-text">iDanny <span style="color: var(--dark);">REPAIR</span></span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link active">Services & Pricing</a></li>
+          <li><a href="book.html" class="nav-link">Book a Repair</a></li>
+          <li><a href="book.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.95rem;">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Services Title Section -->
+    <section class="section section-bg" style="padding: 60px 0 40px 0;">
+      <div class="container text-center reveal">
+        <h1 class="section-title">Our Repair Services</h1>
+        <p class="section-subtitle">We repair phones, tablets, laptops, and game consoles using high-grade replacement parts. Scroll down to try our live cost estimator.</p>
+      </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-section">
+      <div class="container">
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <article class="service-card reveal">
+            <div class="service-card-img">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="service-card-content">
+              <h2 class="service-card-title">Smartphone Repair</h2>
+              <p class="service-card-desc">Shattered screens, bloated batteries, failing speakers, and charging ports. We service Apple iPhone, Samsung Galaxy, and Google Pixel models.</p>
+              <div class="service-card-price">
+                <span>Diagnostics & Repair</span>
+                <span>From RM50</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="service-card reveal" style="transition-delay: 0.1s;">
+            <div class="service-card-img">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="2" y1="20" x2="22" y2="20"></line>
+                <line x1="12" y1="17" x2="12" y2="20"></line>
+              </svg>
+            </div>
+            <div class="service-card-content">
+              <h2 class="service-card-title">Laptop & Desktop</h2>
+              <p class="service-card-desc">SSD hard drive installations, screen assemblies, key replacement, thermal paste applications, and power supply repairs for PC and Mac.</p>
+              <div class="service-card-price">
+                <span>Diagnostics & Repair</span>
+                <span>From RM120</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="service-card reveal" style="transition-delay: 0.2s;">
+            <div class="service-card-img">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="service-card-content">
+              <h2 class="service-card-title">Tablet Services</h2>
+              <p class="service-card-desc">iPad digitizer replacements, charging pin solder, battery swaps, and system restoration. Optimized to restore touch responsiveness.</p>
+              <div class="service-card-price">
+                <span>Diagnostics & Repair</span>
+                <span>From RM70</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service Card 4 -->
+          <article class="service-card reveal" style="transition-delay: 0.3s;">
+            <div class="service-card-img">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="6" width="20" height="12" rx="2" ry="2"></rect>
+                <circle cx="17" cy="12" r="1.5"></circle>
+                <circle cx="6" cy="12" r="2"></circle>
+                <line x1="6" y1="10" x2="6" y2="14"></line>
+                <line x1="4" y1="12" x2="8" y2="12"></line>
+              </svg>
+            </div>
+            <div class="service-card-content">
+              <h2 class="service-card-title">Console Repair</h2>
+              <p class="service-card-desc">HDMI port repairs, fan dust cleanouts, disc drive assemblies, and controller stick drift repairs for PlayStation, Xbox, and Switch.</p>
+              <div class="service-card-price">
+                <span>Diagnostics & Repair</span>
+                <span>From RM90</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Pricing Estimator Section -->
+    <section class="section section-bg" id="calculator-section">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">Interactive Cost Estimator</h2>
+          <p class="section-subtitle">Select your device, brand, and select the problems you are facing to get a real-time price calculation instantly.</p>
+        </div>
+
+        <div class="estimator-box reveal">
+          <!-- Device and Brand dropdowns -->
+          <div class="estimator-row">
+            <div class="estimator-group">
+              <label for="estimator-device" class="estimator-label">1. Select Device</label>
+              <select id="estimator-device" class="estimator-select">
+                <option value="smartphone" selected>Smartphone</option>
+                <option value="tablet">Tablet</option>
+                <option value="laptop">Laptop</option>
+                <option value="console">Game Console</option>
+              </select>
+            </div>
+            
+            <div class="estimator-group">
+              <label for="estimator-brand" class="estimator-label">2. Select Brand</label>
+              <select id="estimator-brand" class="estimator-select">
+                <option value="apple" selected>Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="google">Google</option>
+                <option value="hp">HP</option>
+                <option value="dell">Dell</option>
+                <option value="lenovo">Lenovo</option>
+                <option value="sony">Sony</option>
+                <option value="microsoft">Microsoft</option>
+                <option value="nintendo">Nintendo</option>
+                <option value="other">Other / Generic</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Checked Issues Grid -->
+          <div class="issues-container">
+            <h3 class="issues-title">3. Select Issues to Fix</h3>
+            <div class="issues-grid">
+              <!-- Issue 1 -->
+              <label class="checkbox-card selected">
+                <input type="checkbox" data-price="120" checked>
+                <span class="checkbox-info">
+                  <span class="checkbox-name">Screen Replacement</span>
+                  <span class="checkbox-price">+RM120</span>
+                </span>
+              </label>
+
+              <!-- Issue 2 -->
+              <label class="checkbox-card">
+                <input type="checkbox" data-price="60">
+                <span class="checkbox-info">
+                  <span class="checkbox-name">Battery Replacement</span>
+                  <span class="checkbox-price">+RM60</span>
+                </span>
+              </label>
+
+              <!-- Issue 3 -->
+              <label class="checkbox-card">
+                <input type="checkbox" data-price="55">
+                <span class="checkbox-info">
+                  <span class="checkbox-name">Charging Port Repair</span>
+                  <span class="checkbox-price">+RM55</span>
+                </span>
+              </label>
+
+              <!-- Issue 4 -->
+              <label class="checkbox-card">
+                <input type="checkbox" data-price="130">
+                <span class="checkbox-info">
+                  <span class="checkbox-name">Liquid Damage Repair</span>
+                  <span class="checkbox-price">+RM130</span>
+                </span>
+              </label>
+
+              <!-- Issue 5 -->
+              <label class="checkbox-card">
+                <input type="checkbox" data-price="80">
+                <span class="checkbox-info">
+                  <span class="checkbox-name">Software Recovery / Fix</span>
+                  <span class="checkbox-price">+RM80</span>
+                </span>
+              </label>
+
+              <!-- Issue 6 -->
+              <label class="checkbox-card">
+                <input type="checkbox" data-price="45">
+                <span class="checkbox-info">
+                  <span class="checkbox-name">General Diagnostic Testing</span>
+                  <span class="checkbox-price">+RM45</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Estimator Live Display -->
+          <div class="estimator-result">
+            <span class="result-text">Estimated Repair Cost:*</span>
+            <span class="result-price" id="result-price">RM200</span>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--dark-light); margin-top: 12px; font-style: italic;">*Note: Calculated estimate includes diagnostics and labor. Subject to technician review.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Got questions about your repair? Here are answers to the most common questions we receive.</p>
+        </div>
+
+        <div class="accordion-wrapper reveal">
+          <!-- FAQ Item 1 -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>How long will my repair take?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <p>Most common repairs (like iPhone screens, iPad batteries, and USB charging docks) are completed within 1 to 2 hours. More complex repairs involving water damage remediation or motherboard microsoldering typically require 24 to 48 hours for diagnostic cycles.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Do you use original OEM parts?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <p>We source only original spec parts that match manufacturer standards (OEM grade). In cases where manufacturers do not distribute parts directly to independent workshops, we buy the absolute highest grade components matching original performance specifications, ensuring full compatibility.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What is your "No Fix, No Fee" policy?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <p>If we diagnose your device and find that it is irreparable due to fatal mainboard cracks or severe water corrosion, we will not charge you a single cent. You only pay when we successfully return a working device back to you.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Do I need to back up my data before repair?</h3>
+              <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+              <p>While screen and battery replacements rarely impact device operating storage, we strongly recommend executing a full cloud or computer backup of your personal files before any hardware service to prevent accidental loss.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <div class="footer-logo">
+          <img src="images/iDannyRepair_Logo.png" alt="iDanny Repair Logo White" class="footer-logo-img">
+          <span class="footer-logo-text">iDanny REPAIR</span>
+        </div>
+        <div class="footer-collaboration">
+          <span class="collab-text">in collaboration with</span>
+          <div class="collaboration-logos">
+            <img src="images/LOGO_UiTM_OUTLINE_3(WHITE).png" alt="UiTM Logo" class="collab-logo" style="width: 90px; height: auto;">
+            <span class="collab-divider">|</span>
+            <div class="antigravity-collab">
+              <img src="images/antigravity.png" alt="Antigravity Logo" class="collab-logo">
+              <span class="antigravity-text"><strong>Google</strong> Antigravity</span>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 20px;">Premium hardware repairs, battery diagnostics, screen configurations, and software setup services. We bring your smart devices back to life.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services & Pricing</a></li>
+          <li><a href="book.html">Book a Repair</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact & Hours</h3>
+        <ul class="footer-links" style="color: #94A3B8; font-size: 0.9rem;">
+          <li>📍 UiTM Cawangan Kelantan, Kampus Machang, 18500 Machang, Kelantan, Malaysia</li>
+          <li>📞 +60 16-262 4834</li>
+          <li>✉️ support@idannyrepair.com</li>
+          <li style="margin-top: 12px; color: var(--white); font-weight: 500;">Mon - Fri: 9:00 AM - 6:00 PM</li>
+          <li style="color: var(--white); font-weight: 500;">Sat: 10:00 AM - 4:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 iDanny Repair. All rights reserved.</p>
+      <div class="footer-socials-bottom">
+        <span class="socials-title-bottom">Follow Me</span>
+        <div class="social-icons-bottom">
+          <a href="https://www.facebook.com/modanniee/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/tengkuahmaddanial/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://github.com/KuDanial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://www.youtube.com/@tengkuahmaddanial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- jQuery Library CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <!-- Main scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery-features.js"></script>
+</body>
+</html>

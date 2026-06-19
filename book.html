@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Repair Appointment | iDanny Repair</title>
+  <meta name="description" content="Schedule a diagnostic and repair appointment online at iDanny Repair. Simple form validation, custom dates, and fast replies.">
+  <link rel="icon" type="image/png" href="images/iDannyRepair_Logo.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="logo-nav">
+        <img src="images/iDannyRepair_Logo.png" alt="iDanny Repair Logo" class="logo-img">
+        <span class="logo-text">iDanny <span style="color: var(--dark);">REPAIR</span></span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services & Pricing</a></li>
+          <li><a href="book.html" class="nav-link active">Book a Repair</a></li>
+          <li><a href="book.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.95rem;">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Booking Banner Section -->
+    <section class="section section-bg" style="padding: 60px 0 40px 0;">
+      <div class="container text-center reveal">
+        <h1 class="section-title">Schedule Your Repair</h1>
+        <p class="section-subtitle">Fill in your contact info, select your device category, and reserve an appointment time. Our technicians will inspect your device and fix it quickly.</p>
+      </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Main Form Box -->
+        <div class="booking-box reveal">
+          <!-- Live Form Success Message -->
+          <div id="form-success-message" class="form-message"></div>
+
+          <form id="booking-form" novalidate>
+            <!-- 1. Client Name -->
+            <div class="form-group">
+              <label for="client-name" class="form-label">Full Name</label>
+              <input type="text" id="client-name" name="name" class="form-input" placeholder="e.g., John Doe" required>
+              <span class="invalid-feedback"></span>
+            </div>
+
+            <!-- 2. Client Email -->
+            <div class="form-group">
+              <label for="client-email" class="form-label">Email Address</label>
+              <input type="email" id="client-email" name="email" class="form-input" placeholder="e.g., john@example.com" required>
+              <span class="invalid-feedback"></span>
+            </div>
+
+            <!-- 3. Client Phone -->
+            <div class="form-group">
+              <label for="client-phone" class="form-label">Phone Number</label>
+              <input type="tel" id="client-phone" name="phone" class="form-input" placeholder="e.g., (555) 019-2834" required>
+              <span class="invalid-feedback"></span>
+            </div>
+
+            <!-- 4. Device Category Selection -->
+            <div class="form-group">
+              <label for="device-type" class="form-label">Device Type</label>
+              <select id="device-type" name="device" class="form-input" required>
+                <option value="" disabled selected>-- Select Your Device --</option>
+                <option value="smartphone">Smartphone (iPhone, Galaxy, Pixel, etc.)</option>
+                <option value="laptop">Laptop / MacBook</option>
+                <option value="tablet">Tablet / iPad</option>
+                <option value="console">Game Console (PS5, Xbox, Switch)</option>
+              </select>
+              <span class="invalid-feedback"></span>
+            </div>
+
+            <!-- 5. Appointment Booking Date -->
+            <div class="form-group">
+              <label for="booking-date" class="form-label">Preferred Appointment Date</label>
+              <input type="date" id="booking-date" name="date" class="form-input" required>
+              <span class="invalid-feedback"></span>
+            </div>
+
+            <!-- 6. Contact Preference (Radio Buttons) -->
+            <div class="form-group">
+              <span class="form-label" style="display: block; margin-bottom: 8px;">Preferred Contact Method</span>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="contact-preference" value="email" checked>
+                  <span>Email</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="contact-preference" value="phone">
+                  <span>Phone Call</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="contact-preference" value="text">
+                  <span>Text Message</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 7. Repair Details / Textarea -->
+            <div class="form-group">
+              <label for="repair-details" class="form-label">Describe the Issue (Optional)</label>
+              <textarea id="repair-details" name="details" class="form-textarea" placeholder="e.g., Screen cracked in the top right corner. Touch responsiveness is lagging, battery drain is fast..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit-booking" class="btn btn-primary" style="width: 100%; margin-top: 12px;">Submit Repair Booking</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <div class="footer-logo">
+          <img src="images/iDannyRepair_Logo.png" alt="iDanny Repair Logo White" class="footer-logo-img">
+          <span class="footer-logo-text">iDanny REPAIR</span>
+        </div>
+        <div class="footer-collaboration">
+          <span class="collab-text">in collaboration with</span>
+          <div class="collaboration-logos">
+            <img src="images/LOGO_UiTM_OUTLINE_3(WHITE).png" alt="UiTM Logo" class="collab-logo" style="width: 90px; height: auto;">
+            <span class="collab-divider">|</span>
+            <div class="antigravity-collab">
+              <img src="images/antigravity.png" alt="Antigravity Logo" class="collab-logo">
+              <span class="antigravity-text"><strong>Google</strong> Antigravity</span>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 20px;">Premium hardware repairs, battery diagnostics, screen configurations, and software setup services. We bring your smart devices back to life.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services & Pricing</a></li>
+          <li><a href="book.html">Book a Repair</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact & Hours</h3>
+        <ul class="footer-links" style="color: #94A3B8; font-size: 0.9rem;">
+          <li>📍 UiTM Cawangan Kelantan, Kampus Machang, 18500 Machang, Kelantan, Malaysia</li>
+          <li>📞 +60 16-262 4834</li>
+          <li>✉️ support@idannyrepair.com</li>
+          <li style="margin-top: 12px; color: var(--white); font-weight: 500;">Mon - Fri: 9:00 AM - 6:00 PM</li>
+          <li style="color: var(--white); font-weight: 500;">Sat: 10:00 AM - 4:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 iDanny Repair. All rights reserved.</p>
+      <div class="footer-socials-bottom">
+        <span class="socials-title-bottom">Follow Me</span>
+        <div class="social-icons-bottom">
+          <a href="https://www.facebook.com/modanniee/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/tengkuahmaddanial/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://github.com/KuDanial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://www.youtube.com/@tengkuahmaddanial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- jQuery Library CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <!-- Main scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery-features.js"></script>
+</body>
+</html>
