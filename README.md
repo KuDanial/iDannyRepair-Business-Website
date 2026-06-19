@@ -1,5 +1,7 @@
 # 🔧 iDanny Repair - Interactive Small Business Website
 
+![landing page](./images/landingpage-banner.png)
+
 An interactive, responsive, multi-page frontend website developed for **iDanny Repair**, a device repair shop specializing in hardware repairs for smartphones, laptops, tablets, and gaming consoles.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -13,10 +15,14 @@ An interactive, responsive, multi-page frontend website developed for **iDanny R
 
 ![Collaboration](https://img.shields.io/badge/Collaboration-UiTM%20Kelantan%20%7C%20Google%20Antigravity-blue?style=for-the-badge&logo=google&logoColor=white)
 
+![footer](./images/brokendevice-banner.png)
+
 * **Academic Institution:** Universiti Teknologi MARA (UiTM) Cawangan Kelantan, Kampus Machang
 * **Engineering Support:** Google Antigravity AI Coding Team
 
 ---
+
+
 
 ## 📁 Directory Structure
 
@@ -91,3 +97,7 @@ To upload this project to your GitHub account:
    ```bash
    git push -u origin main
    ```
+
+---
+
+![poster](./images/Poster-Banner.png)
