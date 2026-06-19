@@ -41,8 +41,11 @@ $(document).ready(function () {
     });
 
     const $dots = $('.carousel-dot');
+    let isAnimating = false;
 
     function goToSlide(index) {
+      if (isAnimating) return;
+
       // Boundaries
       if (index < 0) {
         index = $slides.length - 1;
@@ -50,13 +53,27 @@ $(document).ready(function () {
         index = 0;
       }
 
-      // Transition slides
-      $slides.removeClass('active').fadeOut(300);
-      $slides.eq(index).addClass('active').fadeIn(500);
+      if (index === currentIndex) return;
+
+      isAnimating = true;
 
       // Transition dots
       $dots.removeClass('active');
       $dots.eq(index).addClass('active');
+
+      // Transition slides sequentially to prevent overlap
+      const $activeSlide = $slides.filter('.active');
+      if ($activeSlide.length) {
+        $activeSlide.removeClass('active').fadeOut(200, function () {
+          $slides.eq(index).addClass('active').fadeIn(200, function () {
+            isAnimating = false;
+          });
+        });
+      } else {
+        $slides.eq(index).addClass('active').fadeIn(200, function () {
+          isAnimating = false;
+        });
+      }
 
       currentIndex = index;
     }
