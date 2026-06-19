@@ -1,10 +1,6 @@
-# iDanny Repair - Interactive Small Business Website
+# 🔧 iDanny Repair - Interactive Small Business Website
 
 An interactive, responsive, multi-page frontend website developed for **iDanny Repair**, a device repair shop specializing in hardware repairs for smartphones, laptops, tablets, and gaming consoles.
-
----
-
-## 🛠️ Tech Stack & Collaboration
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
