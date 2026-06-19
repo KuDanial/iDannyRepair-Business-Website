@@ -100,4 +100,4 @@ To upload this project to your GitHub account:
 
 ---
 
-![poster](./images/Poster-Banner.png)
+![poster](./images/posterbanner.png)
