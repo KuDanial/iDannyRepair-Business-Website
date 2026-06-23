@@ -68,38 +68,4 @@ No installation or environment server setup is required.
 1. Clone this repository or download the folder.
 2. Simply double-click [index.html](index.html) (or open it in Google Chrome, Microsoft Edge, or Safari) to start exploring the website interface!
 
----
-
-## 🚀 Pushing to GitHub
-
-To upload this project to your GitHub account:
-
-1. Initialize Git in the local project directory:
-   ```bash
-   git init
-   ```
-
-2. Add all project files to staging:
-   ```bash
-   git add .
-   ```
-
-3. Commit the changes:
-   ```bash
-   git commit -m "Initial commit: iDanny Repair website for UiTM assignment"
-   ```
-
-4. Create your remote repository on [GitHub](https://github.com/), copy the repo URL, and link it:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/KuDanial/YOUR_REPO_NAME.git
-   ```
-
-5. Push the code:
-   ```bash
-   git push -u origin main
-   ```
-
----
-
 ![poster](./images/posterbanner.png)
