@@ -13,10 +13,6 @@ An interactive, responsive, multi-page frontend website developed for **iDanny R
 
 ---
 
-## 🤝 Academic & Corporate Partners
-
-![Collaboration](https://img.shields.io/badge/Collaboration-UiTM%20Kelantan%20%7C%20Google%20Antigravity-blue?style=for-the-badge&logo=google&logoColor=white)
-
 ![footer](./images/brokendevice-banner.png)
 
 * **Academic Institution:** Universiti Teknologi MARA (UiTM) Cawangan Kelantan, Kampus Machang
